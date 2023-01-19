@@ -12,72 +12,74 @@
     padding: 0px;
 }
 
-body{
+html, body{
+    min-height: 100vh;/* viewport height */
+    background-color: darkgray;/*colocar cor de fundo no site.*/
     font-family: var(--fonte-padrao);
 }
 
 header {
-    color: white;
     background-color: black;
+    color: white;
     text-align: center;
-    min-height: 290px;
 }
 
 header > h1{
-    font-family: var(--fonte-destaque);
     font-size: 153px;
     padding-top: 50px;
+    font-family: var(--fonte-destaque);
+    font-variant: small-caps; /*configura para maiúscula.a primeira fica com o tamanho normal,porem as restantantes diminuem apenas a altura */
 }
 
-header a{
+header > p {
+    padding-bottom: 50px;
+}
+header a, footer a{ /*simplificação*/
     color: white;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 16px;
     text-decoration: none;
 }
 
-header a:hover{
+header a:hover, footer a:hover{ /*simplificação*/
     text-decoration: underline;
 }
-
-section > p{
-    font-family: var(--fonte-paragrafo);
-    font-size: 53px;
-    line-height: 100px;
-    margin-top: 80px;
-    margin-bottom: 210px;
-    margin-left:30px;
-    min-width: 500px;
-    max-width: 1300px;
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
 }
 
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+}
+section.imagem > p {
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 400px;
+}
+
+
 #dois{
-    background-image: url("imagens/background001.jpg");   
+    background-image: url("../imagens/background001.jpg");   
     background-position: right center;
     background-size: cover;
     background-attachment: fixed;
-    padding-top: 60px; 
-    padding-bottom: 60px;
-}
-
-section.box > p{
-    max-width: 650px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding-top: 20px; 
-    padding-bottom: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 
 }
+
 
 #quatro{
-    background-image: url("imagens/background002.jpg");
+    background-image: url("../imagens/background002.jpg");
     background-position: left top;
     background-size: cover;
     background-attachment: fixed;
-    padding-top: 60px;
-    padding-bottom: 60px;
+
 }
 
 
@@ -85,17 +87,6 @@ footer{
     background-color: black;
     text-align: center;
     padding: 10px ;
-
-}
-footer > p{
     color: white;
     font-size: 16px;
-}
-footer a{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-footer a:hover{
-    text-decoration: underline;
 }
