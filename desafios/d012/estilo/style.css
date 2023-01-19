@@ -61,25 +61,23 @@ section.normal{
     color: black;
 }
 section.imagem{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     color:white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.4)
 }
 section.imagem > p {
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.3);
     display: inline-block;
+    text-shadow: 1px 1px 0px black;
 }
-
-
-#dois{
+section#img01{
     background-image: url("../imagens/background001.jpg");   
     background-position: right center;
     background-size: cover;
     background-attachment: fixed;
 
 }
-
-
-#quatro{
+section#img02{
     background-image: url("../imagens/background002.jpg");
     background-position: left top;
     background-size: cover;
