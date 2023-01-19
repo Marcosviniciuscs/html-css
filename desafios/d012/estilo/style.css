@@ -10,6 +10,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body{
@@ -25,10 +26,10 @@ header {
 }
 
 header > h1{
-    font-size: 153px;
+    font-size: 10vw;
     padding-top: 50px;
     font-family: var(--fonte-destaque);
-    font-variant: small-caps; /*configura para maiúscula.a primeira fica com o tamanho normal,porem as restantantes diminuem apenas a altura */
+    font-variant: small-caps; /*todos os glifos se transformam para maiúscula */
 }
 
 header > p {
@@ -37,7 +38,6 @@ header > p {
 header a, footer a{ /*simplificação*/
     color: white;
     font-weight: bolder;
-    font-size: 16px;
     text-decoration: none;
 }
 
@@ -49,6 +49,11 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte-paragrafo);
+    font-size: 3.5vw;
+}
+section > p{
+    padding-bottom: 2em;
 }
 
 section.normal{
@@ -61,7 +66,7 @@ section.imagem{
 }
 section.imagem > p {
     background-color:rgba(0, 0, 0, 0.5);
-    width: 400px;
+    display: inline-block;
 }
 
 
