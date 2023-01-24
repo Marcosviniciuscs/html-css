@@ -11,20 +11,36 @@
         }
         table{
             width: 500px;
+            position: relative;
         }
         td , th{
             border: 1px solid black;
             padding: 10px;
         }
         thead{
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+        thead > tr > th{
+            position:sticky;
+            top:0;
+            background-color: #383838;
         }
         td.num{
             text-align: right;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight:bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
         tfoot{
-            background-color: gray;
+            background-color: #383838;
             color:white;
         }
     </style>
@@ -33,18 +49,20 @@
     <h1>Uso de tabelas grandes</h1>
     <!--Anatomia para tabelas grandes
     table
-            THEAD            CABEÇA
-                TR, TD, TH
-            TBODY            CORPO
-                TR, TD, TH
-            TFOOT            PE
-                TR, TD, TH 
+        CAPTION          legenda(nao colocsar tr nem td)
+        THEAD            CABEÇA
+            TR, TD, TH
+        TBODY            CORPO
+            TR, TD, TH
+        TFOOT            PE
+            TR, TD, TH 
     -->
     <table>
+        <caption>População das Unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -159,10 +177,45 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vel accusamus tenetur magnam, repudiandae dolore similique odit voluptatem ex doloremque rerum necessitatibus vero laudantium, voluptate delectus praesentium voluptatibus non fuga.lorem
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia minus vero nihil voluptatem autem, quaerat aut doloremque possimus tempore quidem, ratione molestias amet, fugit aliquam sit rem qui. Quo, fuga!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus enim, cum quibusdam, tempore maiores at quo sint hic dignissimos ea ut blanditiis incidunt nobis dolor temporibus! Nihil, debitis unde.lorem
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sunt hic illo architecto molestiae harum ex omnis. Doloribus aliquid minus laboriosam obcaecati itaque vero non iste eius earum consequuntur. Eligendi.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vel accusamus tenetur magnam, repudiandae dolore similique odit voluptatem ex doloremque rerum necessitatibus vero laudantium, voluptate delectus praesentium voluptatibus non fuga.lorem
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia minus vero nihil voluptatem autem, quaerat aut doloremque possimus tempore quidem, ratione molestias amet, fugit aliquam sit rem qui. Quo, fuga!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus enim, cum quibusdam, tempore maiores at quo sint hic dignissimos ea ut blanditiis incidunt nobis dolor temporibus! Nihil, debitis unde.lorem
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sunt hic illo architecto molestiae harum ex omnis. Doloribus aliquid minus laboriosam obcaecati itaque vero non iste eius earum consequuntur. Eligendi.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vel accusamus tenetur magnam, repudiandae dolore similique odit voluptatem ex doloremque rerum necessitatibus vero laudantium, voluptate delectus praesentium voluptatibus non fuga.lorem
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia minus vero nihil voluptatem autem, quaerat aut doloremque possimus tempore quidem, ratione molestias amet, fugit aliquam sit rem qui. Quo, fuga!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus enim, cum quibusdam, tempore maiores at quo sint hic dignissimos ea ut blanditiis incidunt nobis dolor temporibus! Nihil, debitis unde.lorem
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sunt hic illo architecto molestiae harum ex omnis. Doloribus aliquid minus laboriosam obcaecati itaque vero non iste eius earum consequuntur. Eligendi.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vel accusamus tenetur magnam, repudiandae dolore similique odit voluptatem ex doloremque rerum necessitatibus vero laudantium, voluptate delectus praesentium voluptatibus non fuga.lorem
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia minus vero nihil voluptatem autem, quaerat aut doloremque possimus tempore quidem, ratione molestias amet, fugit aliquam sit rem qui. Quo, fuga!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus enim, cum quibusdam, tempore maiores at quo sint hic dignissimos ea ut blanditiis incidunt nobis dolor temporibus! Nihil, debitis unde.lorem
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sunt hic illo architecto molestiae harum ex omnis. Doloribus aliquid minus laboriosam obcaecati itaque vero non iste eius earum consequuntur. Eligendi.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vel accusamus tenetur magnam, repudiandae dolore similique odit voluptatem ex doloremque rerum necessitatibus vero laudantium, voluptate delectus praesentium voluptatibus non fuga.lorem
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia minus vero nihil voluptatem autem, quaerat aut doloremque possimus tempore quidem, ratione molestias amet, fugit aliquam sit rem qui. Quo, fuga!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus enim, cum quibusdam, tempore maiores at quo sint hic dignissimos ea ut blanditiis incidunt nobis dolor temporibus! Nihil, debitis unde.lorem
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sunt hic illo architecto molestiae harum ex omnis. Doloribus aliquid minus laboriosam obcaecati itaque vero non iste eius earum consequuntur. Eligendi.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vel accusamus tenetur magnam, repudiandae dolore similique odit voluptatem ex doloremque rerum necessitatibus vero laudantium, voluptate delectus praesentium voluptatibus non fuga.lorem
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia minus vero nihil voluptatem autem, quaerat aut doloremque possimus tempore quidem, ratione molestias amet, fugit aliquam sit rem qui. Quo, fuga!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus enim, cum quibusdam, tempore maiores at quo sint hic dignissimos ea ut blanditiis incidunt nobis dolor temporibus! Nihil, debitis unde.lorem
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sunt hic illo architecto molestiae harum ex omnis. Doloribus aliquid minus laboriosam obcaecati itaque vero non iste eius earum consequuntur. Eligendi.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vel accusamus tenetur magnam, repudiandae dolore similique odit voluptatem ex doloremque rerum necessitatibus vero laudantium, voluptate delectus praesentium voluptatibus non fuga.lorem
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia minus vero nihil voluptatem autem, quaerat aut doloremque possimus tempore quidem, ratione molestias amet, fugit aliquam sit rem qui. Quo, fuga!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus enim, cum quibusdam, tempore maiores at quo sint hic dignissimos ea ut blanditiis incidunt nobis dolor temporibus! Nihil, debitis unde.lorem
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sunt hic illo architecto molestiae harum ex omnis. Doloribus aliquid minus laboriosam obcaecati itaque vero non iste eius earum consequuntur. Eligendi.
+    </p>
 </body>
 </html>
