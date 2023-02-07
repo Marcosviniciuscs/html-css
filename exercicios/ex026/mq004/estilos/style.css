@@ -31,7 +31,7 @@ h1 {
     font-size: 2em;
     text-align: center;
     color: white;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.600);
 }
 
 img{
@@ -42,5 +42,5 @@ img{
 img#phone { display: block; }
 img#tablet { display: none; }
 img#print { display: none; }
-img#pc    { display: none; }
-img#tv    { display: none; }
+img#pc { display: none; }
+img#tv { display: none; }
