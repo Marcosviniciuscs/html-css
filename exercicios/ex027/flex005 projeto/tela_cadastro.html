@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style01.css">
+</head>
+<body>
+    <main>
+        <section class="conteiner1">
+            <div id="apresentacao">
+                <h1>
+                    Tome decisões com base em informações precisas e visuais claras. 
+                </h1>
+            </div>
+            <div class="conteiner_imagem_logo">
+                <img src="imagens/logo.png" alt="logo">
+            </div>
+            
+        </section>
+
+        <section class="conteiner2">
+            <div id="login">
+                <h1>Inscreva-se</h1>
+                <p>
+                    Você poderá começar assim que se inscrever. <br>
+                    <strong>Criar nova conta</strong>
+                </p>
+                <div class="formulario">
+                    <form action="cadastro.php" method="post">
+                        <div class="conteiner_nome">
+                            <div class="PrimeiroNome">
+                                <label for="iprimeiro_nome">Primeiro nome </label>
+                                <input type="text" name="primeiro" id="iprimeiro_nome" required>
+                            </div>
+                            
+                            <div class="Sobrenome">
+                                <label for="isobrenome">Sobrenome </label>
+                                <input type="text" name="sobre" id="isobrenome" required>
+                            </div>
+                        </div>
+                        <div class="conteiner_email">
+                            <label for="iemail">E-mail</label>
+                            <input type="text" name="email" id="iemail" riquired>
+                        </div>
+                        
+                        <div class="conteiner_senha">
+                            <label for="isenha">Senha </label>
+                            <input type="password" name="senha" id="isenha" required>
+                        </div>
+
+                        <div class="conteiner_Confirmarsenha">
+                            <label for="iConfirmarsenha">Confirmar senha </label>
+                            <input type="password" name="confirmarsenha" id="iConfirmarsenha" required>
+                        </div>
+                        <input type="submit" value="Criar conta" name="login" id="Criarconta">
+                    </form>
+
+                    <div class="page_login">
+                        <p>Já possui uma conta? <a href="index.html">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

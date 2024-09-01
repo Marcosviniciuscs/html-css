@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="conteiner1">
+            <div id="apresentacao">
+                <h1>
+                    O portal ideal para transformar dados complexos em informações claras e impactantes.  
+                </h1>
+            </div>
+            <div  class="conteiner_imagem">
+                <img src="imagens/logo.png" alt="logo">
+            </div>
+        </section>
+        <section class="conteiner2">
+            <div id="login">
+                <div class="titulo">
+                    <h1>Seja bem vindo!</h1>
+                    <p>Faça login na sua conta.</p>
+                </div>
+
+                <div class="formulario">
+                    <form action="cadastro.php" method="post">
+                        <label for="iemail">E-mail: </label>
+                        <input type="text" name="email" id="iemail" required>
+
+                        <label for="isenha">Senha: </label>
+                        <input type="password" name="senha" id="isenha" required>
+
+                        <div class="manter_informacoes">
+                            <input type="checkbox" name="infor" id="iinformacao">
+                            <label for="iinformacao">Manter minhas informações </label>
+                            <a href="#">Esqueceu a senha?</a>
+                        </div>
+
+                        <input type="submit" value="Login" name="login" id="Login">
+
+                        <div class="page_cadastro">
+                            <p>Não tem uma conta? <a href="tela_cadastro.html">inscreva-se</a></p>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

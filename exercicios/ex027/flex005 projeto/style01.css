@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'CiscoSans';
+    src: url(fonts/CiscoSansTT.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --cor0: #D0EFF2;
+    --cor1:#7ED0D9;
+    --cor2:#5FB6D9;
+    --cor3:#37538C;
+    --cor4:#BF3056;
+    --fonte_padrao: 'CiscoSans';
+}
+* {
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightsalmon;
+}
+main{
+    /*pai*/
+    background-color: lightgray;
+    height: 100vh;
+    width: 100vw; 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+section.conteiner1{
+   background-image: linear-gradient(0deg,var(--cor2),var(--cor3));
+   height: 100vh;
+   width: 60vw;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content:center;
+   align-items: center;
+}
+section.conteiner2{
+    background-color: white;
+    height: 100vh;
+    width: 40vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+div#apresentacao{
+    width: 60%;
+    font-family: var(--fonte_padrao);
+}
+#apresentacao > h1{
+    font-size: 25px;
+    font-weight:400;
+    text-align: center;
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-shadow: 2px 2px 0px rgb(0,0,0,0.400);
+}
+.conteiner_imagem_logo > img{
+    border-radius: 50%;
+    box-shadow: 0px 7px 9px 0px rgb(0,0,0,0.400);
+}
+
+div#login{
+    display: flex;
+    flex-flow: column nowrap;
+
+    width:80%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 7px 9px 0px rgb(0,0,0,0.400);
+}
+#formulario{
+    display: flex;
+    flex-flow: column nowrap;
+  
+}
+
+#login > h1{
+    font-family: var(--fonte_padrao);
+    font-weight:lighter;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+#login > p{
+    font-family: var(--fonte_padrao);
+    font-weight:100;
+    font-size: 16px;
+    color: #333333;
+    padding-bottom: 30px;
+}
+
+.conteiner_nome{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+}
+.PrimeiroNome, .Sobrenome{
+    display: flex;
+    flex-flow: column nowrap;
+}
+#iprimeiro_nome{
+    height: 35px;
+    width: 15vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1em;
+    border-radius: 3px;
+    border: 2px solid var(--cor0);
+}
+#isobrenome{
+    height: 35px;
+    width: 15vw;
+    margin-top: 5px;
+    font-size: 1em;
+    border-radius: 3px;
+    border: 2px solid var(--cor0);
+}
+
+.conteiner_email, .conteiner_senha , .conteiner_Confirmarsenha{
+    display: flex;
+    flex-flow: column nowrap;
+    padding-bottom: 15px;
+}
+
+#iemail, #isenha, #iConfirmarsenha{
+    height: 35px;
+    margin-top: 5px;
+    font-size: 1em;
+    border-radius: 3px;
+    border: 2px solid var(--cor0);
+}
+#Criarconta{
+    margin-top: 20px;
+    padding: 10px 80px;
+    border-radius: 30px;
+    border-style: none;
+    color: white;
+    background-color: var(--cor4);
+    font-size: 18px;
+}
+
+.page_login{
+    margin-top: 8%;
+    padding: 6%;
+    color: #333333;
+    background-color: rgba(211, 211, 211, 0.226);
+    font-size: 16px;
+    font-family: "CiscoSans";
+}
+.page_login > p > a{
+    color: var(--cor2);
+    text-decoration: none;
+}
+.page_login > p > a:hover{
+    color: var(--cor3);
+    text-decoration: underline;
+    font-weight: bold;
+}
